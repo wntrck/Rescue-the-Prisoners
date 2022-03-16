@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Rescue the Prisoners</title>
+</head>
+<body>
+    <div id="container">
+        <div id="bgGame">
+            <div id="start" onclick="start()">
+                <img id="logo" src="imgs/logo.png">
+                <p>Utilize as teclas <span class="highlight">W</span>, <span class="highlight">S</span>, <span class="highlight">A</span> e <span class="highlight">D</span> para movimentar o helicóptero para cima, para baixo, para a esqueda e direita respectivamente e <span class="highlight">F</span> para atirar.</p>
+                <p class="start-game">Clique aqui para iniciar</p>
+            </div>
+        </div>
+    </div>
+
+    <audio src="audios/shot.mp3" preload="auto" id="audioShot"></audio>
+    <audio src="audios/explosion.mp3" preload="auto" id="audioExplosion"></audio>
+    <audio src="audios/mainTheme.mp3" preload="auto" id="audioMainTheme"></audio>
+    <audio src="audios/gameover.mp3" preload="auto" id="audioGameover"></audio>
+    <audio src="audios/lost.mp3" preload="auto" id="audioLost"></audio>	
+    <audio src="audios/safe.mp3" preload="auto" id="audioSafe"></audio>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-collision.min.js"></script>
+</body>
+</html>

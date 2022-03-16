@@ -1,0 +1,221 @@
+body {
+	background-image:url(../imgs/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+#logo {
+    width: 80%;
+}
+
+#container{
+	width:950px;
+	height:auto;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#bgGame {
+	width:950px;
+	height:600px;
+	background-image:url(../imgs/bg_game.jpg);
+	border-color:#FFF;
+	border-style:solid;
+}
+
+#start {
+	width:350px;
+	height:230px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #000000;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.highlight {
+    color: rgb(173, 144, 74);
+}
+
+.start-game {
+    padding: 5px;
+    background-color:rgb(173, 144, 74);
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.08s ease-in-out;
+}
+
+.start-game:hover {
+    background: rgb(131, 105, 46);
+}
+
+#player {
+	width:120px;
+	height:122px;
+	position:absolute;
+	left:12px;
+	top:179px;
+    background-image:url(../imgs/h-player.webp);
+	transform: rotateY(180deg);
+
+}
+
+#enemy1 {
+	width: 150px;
+	height: 89px;
+    size-adjust: 30%;
+	position: absolute;
+	left: 810px;
+	top: 210px;
+	background-image:url(../imgs/h-enemy.gif);
+	
+}
+
+#enemy2 {
+	width: 120px;
+	height: 110px;
+	position: absolute;
+	left: 810px;
+	top: 455px;
+	background-image: url(../imgs/t-enemy.webp);
+	transform: rotateY(180deg);
+}
+
+#prisoner {
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	left: 10px;
+	top: 505px;
+	background-image:url(../imgs/prisoner.gif);
+	transform: rotateY(180deg);
+}
+
+#shot {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../imgs/disparo.png);
+}
+
+#explosion1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosion2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosion3 {
+	width: 44px;
+	height: 51px;
+	position: absolute;
+}
+
+.animPrisoner {
+	width: 44px;
+	height: 51px;
+	background-image: url(../imgs/prisoner-death.png);
+	animation: play3 0.4s steps(7) infinite;
+	-webkit-animation: play3 0.4s steps(7) infinite;
+	-moz-animation: play3 0.4s steps(7) infinite;
+	-ms-animation: play3 0.4s steps(7) infinite;
+	-o-animation: play3 0.4s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+#scoreboard {
+	width: 300px;
+	height: 15px;
+	position: absolute;
+	margin-left: 330px;
+	margin-top: 553px;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13pt;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	background-color: rgb(100, 79, 30);
+}
+
+#hp {
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	left: 443px;
+	top: 7px;
+}
+
+#end {
+	width:380px;
+	height:280px;
+	background-color:#ffffff;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:130px;
+	text-align:center;
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px #000000;
+
+}
+
+#imgGameover {
+	width: 70%;
+	margin-top: 36px;
+}
+
+.playAgain {
+	padding: 5px;
+	margin: 20px;
+    background-color:rgb(173, 144, 74);
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.08s ease-in-out;
+}
+
+.playAgain:hover {
+    background: rgb(131, 105, 46);
+}
